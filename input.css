@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@300&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffebf0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: 2px solid #ff80ab;
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    color: #ff4081;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.8em;
+}
+
+input {
+    padding: 12px;
+    margin-top: 15px;
+    border: 1px solid #ff80ab;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1em;
+    font-family: 'Raleway', sans-serif;
+}
+
+input::placeholder {
+    font-family: 'Pacifico';
+    color: #d3d3d3; /* Light gray color for placeholder */
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px 25px;
+    border: none;
+    background-color: #ff80ab;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #ff4081;
+}
+
+#greeting {
+    margin-top: 25px;
+    font-size: 1.2em;
+    color: #ff4081;
+    font-family: 'Pacifico', cursive;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    input, button {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    .container {
+        padding: 20px;
+        border-radius: 15px;
+    }
+}

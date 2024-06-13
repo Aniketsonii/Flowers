@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask for Name</title>
+    <link rel="stylesheet" href="input.css">
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="nameInput" placeholder="Your lovely name">
+        <button onclick="submitName()">Submit</button>
+        <p id="greeting"></p>
+    </div>
+    <script>
+        function submitName() {
+            const name = document.getElementById('nameInput').value;
+            const greetingElement = document.getElementById('greeting');
+
+            if (name) {
+                greetingElement.textContent = `Hello, ${name}!`;
+                window.location.href = `phool.html?name=${encodeURIComponent(name)}`;
+            } else {
+                greetingElement.textContent = 'Please enter your name.';
+            }
+        }
+
+    </script>
+</body>
+</html>
